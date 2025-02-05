@@ -11,15 +11,16 @@ import java.text.NumberFormat;
 
 public class Questao_5 {
     public static void executar_Q5() {
+        JOptionPane.showMessageDialog(null, "Conversor de moedas.");
         String meuSaldo = JOptionPane.showInputDialog("Digite o valor em R$ BRL que deseja converter");
 
         double meuSaldoBRL = Double.parseDouble(meuSaldo);
 
         NumberFormat formatoBRL = new DecimalFormat("R$ ###,##0.00");
-        NumberFormat formatoEUR = new DecimalFormat("###.##0,00 € ");
-        NumberFormat formatoCAD = new DecimalFormat("C$  ###,##0.00");
+        NumberFormat formatoEUR = new DecimalFormat("###,##0.00 €");
+        NumberFormat formatoCAD = new DecimalFormat("C$ ###,##0.00");
         NumberFormat formatoUSD = new DecimalFormat("$ ###,##0.00");
-        NumberFormat formatoARS = new DecimalFormat("$ ###.##0,00");
+        NumberFormat formatoARS = new DecimalFormat("$ ###,##0.00");
 
         Object[] moedas = {"EUR", "CAD", "USD", "ARS", "Cancelar"};
         int seletorMoeda = JOptionPane.showOptionDialog(
@@ -33,21 +34,35 @@ public class Questao_5 {
         moedas[0]
         );
 
-        double EUR = ;
-        double CAD = ;
-        double USD = ;
-        double ARS = ;
+        double taxaEUR = 5.991;
+        double taxaCAD = 4.03;
+        double taxaUSD = 5.771;
+        double taxaARS = 0.005;
+
+        double conversao = 0.00;
 
         if (seletorMoeda == 0) {
-            JOptionPane.showMessageDialog(null, "");
+            conversao = meuSaldoBRL / taxaEUR;
+            JOptionPane.showMessageDialog(null, "O seu saldo de " +
+                    formatoBRL.format(meuSaldoBRL) + " equivale a " + formatoEUR.format(conversao));
+
         } else if (seletorMoeda == 1) {
-            JOptionPane.showMessageDialog(null, "");
+            conversao = meuSaldoBRL / taxaCAD;
+
+            JOptionPane.showMessageDialog(null, "O seu saldo de " +
+                    formatoBRL.format(meuSaldoBRL) + " equivale a " + formatoCAD.format(conversao));
 
         } else if (seletorMoeda == 2) {
-            JOptionPane.showMessageDialog(null, "");
+            conversao = meuSaldoBRL / taxaUSD;
+
+            JOptionPane.showMessageDialog(null, "O seu saldo de " +
+                    formatoBRL.format(meuSaldoBRL) + " equivale a " + formatoUSD.format(conversao));
 
         } else if (seletorMoeda == 3) {
-            JOptionPane.showMessageDialog(null, "");
+            conversao = meuSaldoBRL / taxaARS;
+
+            JOptionPane.showMessageDialog(null, "O seu saldo de " +
+                    formatoBRL.format(meuSaldoBRL) + " equivale a " + formatoARS.format(conversao));
         }
         else {
             JOptionPane.showMessageDialog(null, "O usuario cancelou a operação");
