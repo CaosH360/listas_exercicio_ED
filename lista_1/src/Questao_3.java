@@ -20,9 +20,9 @@ public class Questao_3 {
 
         double area = largura * comprimento;
 
-        NumberFormat formato = new DecimalFormat("###,##0.00m²");
+        NumberFormat metroQuadra = new DecimalFormat("###,##0.00m²");
 
-        JOptionPane.showMessageDialog(null, "A área das medidas fornecidas equivale a " + formato.format(area));
+        JOptionPane.showMessageDialog(null, "A área das medidas fornecidas equivale a " + metroQuadra.format(area));
 
 
 

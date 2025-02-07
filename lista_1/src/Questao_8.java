@@ -7,5 +7,31 @@
 //Lembre-se de ler os cinco preços, calcular a média e exibir o resultado.
 
 
+import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
 public class Questao_8 {
+    public static void executar_Q8() {
+        JOptionPane.showMessageDialog(null, "Sistema de media de valor de produto");
+        String produto = JOptionPane.showInputDialog("Digite o nome do produto");
+        String mercado1 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
+        String mercado2 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
+        String mercado3 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
+        String mercado4 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
+        String mercado5 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
+
+        double ValorMercado1 = Double.parseDouble(mercado1);
+        double ValorMercado2 = Double.parseDouble(mercado2);
+        double ValorMercado3 = Double.parseDouble(mercado3);
+        double ValorMercado4 = Double.parseDouble(mercado4);
+        double ValorMercado5 = Double.parseDouble(mercado5);
+
+        double media = (ValorMercado1 + ValorMercado2 + ValorMercado3 + ValorMercado4 + ValorMercado5) / 5;
+        NumberFormat formatoBRL = new DecimalFormat("R$ ###,##0.00");
+
+
+        JOptionPane.showMessageDialog(null, "A media de preço do(a) " + produto +" é de " + formatoBRL.format(media));
+
+    }
 }
