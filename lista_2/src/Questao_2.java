@@ -8,7 +8,15 @@ Você viu na televisão que esse inverno vai ser rigoroso no Brasil. Decidiu ent
 import java.util.Scanner;
 
 public class Questao_2 {
-    public static void executar_Q1(){
+    public static void executar_Q2(){
+        Scanner ler =  new Scanner(System.in);
+        System.out.println("Digite o qual a temperatura atual em Celcius: ");
+        int temperaturaC = ler.nextInt();
+        if(temperaturaC <= 17) {
+            System.out.println("Frio da moléstia");
+        } else {
+            System.out.println("Tudo normal nas terras de Cuçumarim");
 
+        }
     }
 }
