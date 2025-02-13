@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner ler =  new Scanner(System.in);
-        System.out.println("qual questaio quer executar? \n 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11(Cancelar)");
+        System.out.println("qual questaio quer executar? \n 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16(Cancelar)");
 
         int escolhaQuestao = ler.nextInt();
 
@@ -39,6 +39,21 @@ public class Main {
                 Questao_10.executar_Q10();
                 break;
             case 11:
+                Questao_10.executar_Q10();
+                break;
+            case 12:
+                Questao_10.executar_Q10();
+                break;
+            case 13:
+                Questao_10.executar_Q10();
+                break;
+            case 14:
+                Questao_10.executar_Q10();
+                break;
+            case 15:
+                Questao_10.executar_Q10();
+                break;
+            case 16:
 
                 System.out.println("O usuario cancelou a operação");
                 break;

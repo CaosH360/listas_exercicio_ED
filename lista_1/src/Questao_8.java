@@ -15,11 +15,11 @@ public class Questao_8 {
     public static void executar_Q8() {
         JOptionPane.showMessageDialog(null, "Sistema de media de valor de produto");
         String produto = JOptionPane.showInputDialog("Digite o nome do produto");
-        String mercado1 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
-        String mercado2 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
-        String mercado3 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
-        String mercado4 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
-        String mercado5 = JOptionPane.showInputDialog("Digite o valor do produto no mercado em questão");
+        String mercado1 = JOptionPane.showInputDialog("Digite o valor do produto no 1° mercado em questão");
+        String mercado2 = JOptionPane.showInputDialog("Digite o valor do produto no 2° mercado em questão");
+        String mercado3 = JOptionPane.showInputDialog("Digite o valor do produto no 3° mercado em questão");
+        String mercado4 = JOptionPane.showInputDialog("Digite o valor do produto no 4° mercado em questão");
+        String mercado5 = JOptionPane.showInputDialog("Digite o valor do produto no 5° mercado em questão");
 
         double ValorMercado1 = Double.parseDouble(mercado1);
         double ValorMercado2 = Double.parseDouble(mercado2);
