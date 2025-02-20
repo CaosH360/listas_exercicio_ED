@@ -9,6 +9,23 @@ import java.util.Scanner;
 
 public class Questao_8 {
     public static void executar_Q8(){
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite o nome do jogador 1");
+        String jogador1 = ler.nextLine();
+        System.out.println("Digite o nome do jogador 2");
+        String jogador2 = ler.nextLine();
+        System.out.println("Qual número do dado o "+ jogador1 +" tirou");
+        int DadoJ1 = ler.nextInt();
+        System.out.println("Qual número do dado o "+ jogador2 +" tirou");
+        int DadoJ2 = ler.nextInt();
 
+        if (DadoJ1 > DadoJ2) {
+            System.out.println("Quem vai jogar nessa rodada será o(a) jogador(a) "+ jogador1);
+        } else if (DadoJ2 > DadoJ1) {
+            System.out.println("Quem vai jogar nessa rodada será o(a) jogador(a) " + jogador2);
+        } else {
+            System.out.println("A rodada resultou em empate, ninguém irá jogar");
+
+        }
     }
 }

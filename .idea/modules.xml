@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lista_1/lista_1.iml" filepath="$PROJECT_DIR$/lista_1/lista_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lista_2/lista_2.iml" filepath="$PROJECT_DIR$/lista_2/lista_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista_3/lista_3.iml" filepath="$PROJECT_DIR$/lista_3/lista_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista_4/lista_4.iml" filepath="$PROJECT_DIR$/lista_4/lista_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista_5/lista_5.iml" filepath="$PROJECT_DIR$/lista_5/lista_5.iml" />
       <module fileurl="file://$PROJECT_DIR$/listas_exercicio.iml" filepath="$PROJECT_DIR$/listas_exercicio.iml" />
     </modules>
   </component>

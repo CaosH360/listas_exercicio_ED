@@ -14,6 +14,25 @@ o mês de fevereiro tem 29 dias e o ano é chamado de bissexto. Então, a regra 
         eles também se dividem por 100, mas não por 400).
             Faça um programa que diga se um ano é bissexto ou não.*/
 
+import java.util.Scanner;
 
 public class Questao_11 {
+    public static void executar_Q11(){
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite qual o ano deseja conferir se é bissexto ou não");
+        int ano = ler.nextInt();
+
+        boolean bissexto = (ano  % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
+
+        if (bissexto) {
+            System.out.println(ano + " É bissexto.");
+
+        } else {
+            System.out.println(ano + " Não é bissexto.");
+
+        }
+
+
+    }
+
 }
