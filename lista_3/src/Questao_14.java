@@ -6,8 +6,29 @@ encontra o menor deles. Você deve encontrar o menor preço do produto durante o
 
 
 
+import java.util.Random;
+
 public class Questao_14 {
     public static void executar_Q14() {
 
+        Random random = new Random();
+
+        double menorValor = Double.MAX_VALUE;
+        int dias = 30;
+        int diaMenorPreco = -1;
+
+        System.out.println("Digite o preço do produto durantre o mes");
+
+        for (int i = 1; i <=dias; i++) {
+            double preco = random.nextDouble() * 10;
+
+            if (preco < menorValor) {
+                menorValor = preco;
+                diaMenorPreco = i;
+            }
+            System.out.printf("No dia %d o preço do produto foi de  R$ %.2f %n", i, preco);
+
+        }
+        System.out.printf("Durante todo o mês, o menor preço foi de R$ %.2f no dia %d %n", menorValor, diaMenorPreco);
     }
 }
