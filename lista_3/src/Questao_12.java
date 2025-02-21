@@ -5,9 +5,25 @@ os pesos até que uma bagagem com peso zero seja informada. No final, exiba o pe
 bagagens e o novo preço da bagagem.*/
 
 
+import java.util.Scanner;
 
 public class Questao_12 {
     public static void executar_Q12() {
+        Scanner scan = new Scanner(System.in);
+        int contador = 0;
+        double precoQuilo = 10.00;
+        double precoBagagem = 0;
+        double pesoBagagem = 0;
+        double  lerPesoBagagem = 0;
 
+        do {
+            System.out.println("Digite os pesos das bagagens durante o ano ");
+            lerPesoBagagem = scan.nextDouble();
+            pesoBagagem = pesoBagagem + lerPesoBagagem;
+            contador++;
+        }while (lerPesoBagagem != 0);
+        pesoBagagem = pesoBagagem / contador;
+        precoBagagem = pesoBagagem * precoQuilo;
+        System.out.printf("O peso médio das bagagens durante o ano é %.2f, e o novo preço é de R$ %.2f %n", pesoBagagem, precoBagagem);
     }
 }
